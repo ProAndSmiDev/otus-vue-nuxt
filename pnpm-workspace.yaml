@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - '@apollo/protobufjs'
+  - core-js
+  - core-js-pure
+  - yarn
