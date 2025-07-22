@@ -18,7 +18,7 @@ const filteredProducts = computed(() => {
     if (!product) return false
 
     const nameMatch = product.title.toLowerCase().includes(query)
-    const priceMatch = !isNaN(parseFloat(query)) && product.price === parseFloat(query)
+    const priceMatch = !Number.isNaN(parseFloat(query)) && product.price === parseFloat(query)
 
     return nameMatch || priceMatch
   })

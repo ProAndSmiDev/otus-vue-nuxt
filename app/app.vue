@@ -48,36 +48,5 @@
 </style>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(149, 74, 40) transparent;
-}
-
-button {
-  background-color: transparent;
-  border: unset;
-  cursor: pointer;
-}
-
-img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-}
-
-ul, ol {
-  list-style: none;
-  display: flex;
-}
-
-a {
-  text-decoration: none;
-}
 </style>

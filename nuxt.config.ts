@@ -5,5 +5,8 @@ export default defineNuxtConfig({
   modules: ['nuxt-svgo'],
   svgo: {
     autoImportPath: './assets/svg/'
-  }
+  },
+  css: [
+      '~/styles.css'
+  ]
 })
