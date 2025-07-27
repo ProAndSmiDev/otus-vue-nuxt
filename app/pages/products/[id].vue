@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const router = useRouter();
-const {data, pending, error} = useFetch(`https://fakestoreapi.com/products`)
+const {data, pending, error} = useFetch<Products[]>(`https://fakestoreapi.com/products`)
 const product = computed(() => data.value?.find((item: Products) => item.id === Number(router.currentRoute.value.params.id)));
 
 watch(product, () => {
@@ -20,10 +20,14 @@ watch(product, () => {
     <p v-else-if="error" class="product__error">{{ error }}</p>
     <div v-else class="product__content">
       <h1 class="product__title">
-        {{ product.title }}
+        {{ product?.title }}
       </h1>
 
-      <ProductsDetails :product class="product__details" />
+      <ProductsDetails
+        v-if="product"
+        :product
+        class="product__details" 
+      />
     </div>
   </main>
 </template>
