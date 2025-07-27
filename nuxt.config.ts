@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['nuxt-svgo'],
+  modules: ['nuxt-svgo', 'vuetify-nuxt-module'],
   svgo: {
     autoImportPath: './assets/svg/'
   },
@@ -11,5 +11,5 @@ export default defineNuxtConfig({
   ],
   typescript: {
     strict: false
-  }
+  },
 })
