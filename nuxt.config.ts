@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     autoImportPath: './assets/svg/'
   },
   css: [
-      '~/styles.css'
-  ]
+      '~/styles.css',
+  ],
+  typescript: {
+    strict: false
+  }
 })
